@@ -9,4 +9,9 @@ with st.sidebar:
         st.write("🔎 Search Notes")
         st.write("📊 Analytics")
 
-st.popover(label="Add Notes", content="Here you can add your notes. Just type in the box and hit enter!", disabled=False)
+with st.popover("Add Notes"):
+    st.write("Here you can add your notes. Just type in the box below and hit 'Save' to keep your notes safe!")
+    note = st.text_area("Your Note")
+    if st.button("Save"):
+        st.success("Note saved successfully!")
+        
