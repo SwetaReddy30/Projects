@@ -23,7 +23,7 @@ else:
 def add_note_dialog():
     st.write("Here you can add your notes. Just type in the box below and hit 'Save'.")
 
-    note = st.text_area("Your Note", height=250, width=500)
+    note = st.text_area("Your Note", height=250, width=1000)
 
     if st.button("Save"):
         st.success("Note saved successfully!")
