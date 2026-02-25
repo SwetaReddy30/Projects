@@ -1,2 +1,2 @@
 import streamlit as st
-st.write("Hello, Everyone I am shweta Reddy!")
+st.title("Hello, Add your notes here!")
